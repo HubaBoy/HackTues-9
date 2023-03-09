@@ -701,7 +701,7 @@ PrefabInstance:
     - target: {fileID: 6993052043012991796, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 56076466c74f23843b16dfc2419eb894, type: 3}
     - target: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Name
       value: ShopItem (1)
@@ -713,6 +713,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6629569791035114403, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
   m_PrefabInstance: {fileID: 343069084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &343069086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
+  m_PrefabInstance: {fileID: 343069084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &343069087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343069086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a715ddc84f0a7e41a5158992bcb9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoShowup: {fileID: 0}
+  InfoShowup: {fileID: 0}
+  software: {fileID: 0}
 --- !u!1 &410680250
 GameObject:
   m_ObjectHideFlags: 0
@@ -1771,7 +1791,7 @@ PrefabInstance:
     - target: {fileID: 6993052043012991796, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: a51bd5de3e190e548a982f0191a6c54d, type: 3}
     - target: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Name
       value: ShopItem (2)
@@ -1783,6 +1803,26 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6629569791035114403, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
   m_PrefabInstance: {fileID: 819164723}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &819164725 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
+  m_PrefabInstance: {fileID: 819164723}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &819164726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 819164725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a715ddc84f0a7e41a5158992bcb9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoShowup: {fileID: 0}
+  InfoShowup: {fileID: 0}
+  software: {fileID: 0}
 --- !u!1 &913925181 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
@@ -5257,7 +5297,7 @@ PrefabInstance:
     - target: {fileID: 6993052043012991796, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 21300000, guid: 72667560a62fa77498a772a5032a2a69, type: 3}
     - target: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
       propertyPath: m_Name
       value: ShopItem
@@ -5269,3 +5309,23 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 6629569791035114403, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
   m_PrefabInstance: {fileID: 7733614670306187595}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7733614670306187597 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8774513130075016525, guid: ea882f8a9b52b4a4fb8a9d985f3eaefe, type: 3}
+  m_PrefabInstance: {fileID: 7733614670306187595}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7733614670306187598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7733614670306187597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a715ddc84f0a7e41a5158992bcb9909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoShowup: {fileID: 0}
+  InfoShowup: {fileID: 0}
+  software: {fileID: 0}
