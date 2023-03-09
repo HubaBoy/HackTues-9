@@ -20,6 +20,16 @@ public class PlayerController : MonoBehaviour
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetButtonDown("Fire1"))
+        {
+            RaycastHit2D hit = Physics2D.Raycast(Camera.main.ScreenToWorldPoint(Input.mousePosition), Vector2.zero);
+
+            if ( hit.collider != null && hit.collider.gameObject.GetComponent<Interactable>() != null)
+            {
+                hit.collider.gameObject.GetComponent<Interactable>().Interact();
+            }
+        }
     }
 
     void FixedUpdate()
