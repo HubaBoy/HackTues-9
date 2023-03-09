@@ -11,15 +11,15 @@ public class PlayerController : MonoBehaviour
 
     Vector2 movement;
 
-    void Start()
-    {
-
-    }
+    public Animator animator;
 
     void Update()
     {
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
+
+        animator.SetFloat("Horizontal", movement.x);
+        animator.SetFloat("Vertical", movement.y);
 
         if (Input.GetButtonDown("Fire1"))
         {

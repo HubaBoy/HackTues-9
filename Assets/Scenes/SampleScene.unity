@@ -2316,6 +2316,7 @@ MonoBehaviour:
   rb: {fileID: 1310809949}
   cam: {fileID: 519420033}
   moveSpeed: 5
+  animator: {fileID: 1310809952}
 --- !u!61 &1310809948
 BoxCollider2D:
   m_ObjectHideFlags: 0
