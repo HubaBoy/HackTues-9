@@ -7,7 +7,6 @@ public class InventorySlot : MonoBehaviour
     public Button removeButton;
 
     public GameObject infoShowup;
-
     public InfoShowup InfoShowup;
     public Software software;
 
@@ -35,7 +34,8 @@ public class InventorySlot : MonoBehaviour
         infoShowup.SetActive(true);
         infoShowup.transform.position = transform.position;
         InfoShowup.software = software;
-
+        InfoShowup.name = software.name;
+        InfoShowup.description = software.description;
     }
 
     public void OnRemoveButton()

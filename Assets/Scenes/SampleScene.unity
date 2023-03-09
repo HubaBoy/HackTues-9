@@ -2814,6 +2814,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: InventorySlot (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3520071472854375205, guid: 118ae5cd4edea674396490d5e57b0fb9, type: 3}
+      propertyPath: InfoShowup
+      value: 
+      objectReference: {fileID: 1966064235}
+    - target: {fileID: 3520071472854375205, guid: 118ae5cd4edea674396490d5e57b0fb9, type: 3}
+      propertyPath: infoShowup
+      value: 
+      objectReference: {fileID: 1966064233}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 118ae5cd4edea674396490d5e57b0fb9, type: 3}
 --- !u!224 &1979100004 stripped
@@ -3283,6 +3291,34 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 818562450}
     m_Modifications:
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1966064235}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnCloseButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: InfoShowup, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 420854703, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 3744463875339306781, guid: 3155a45e8d432dd4e8d6aa20c014c336, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5

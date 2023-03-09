@@ -295,6 +295,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   software: {fileID: 0}
+  name: 
+  description: 
+  itemName: {fileID: 3744463876219199213}
+  itemDescription: {fileID: 3744463875958124933}
 --- !u!1 &3744463875958124935
 GameObject:
   m_ObjectHideFlags: 0
