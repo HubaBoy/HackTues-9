@@ -370,5 +370,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ece87a832b9deb4793ea305214d8814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  icon: {fileID: 0}
-  removeButton: {fileID: 0}
+  icon: {fileID: 3520071472141534463}
+  removeButton: {fileID: 3520071471993588411}
