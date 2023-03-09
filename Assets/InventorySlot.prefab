@@ -398,6 +398,8 @@ MonoBehaviour:
   icon: {fileID: 3520071472141534463}
   removeButton: {fileID: 3520071471993588411}
   infoShowup: {fileID: 0}
+  InfoShowup: {fileID: 0}
+  software: {fileID: 0}
 --- !u!61 &5317797265664672133
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -8,20 +8,23 @@ public class InventorySlot : MonoBehaviour
 
     public GameObject infoShowup;
 
-    SoftwareScripts SoftwareScript;
+    public InfoShowup InfoShowup;
+    public Software software;
 
-    public void AddItem(SoftwareScripts newSoftwareScripts)
+    Software Software;
+
+    public void AddItem(Software softwares)
     {
-        SoftwareScript = newSoftwareScripts;
+        software = softwares;
 
-        icon.sprite = SoftwareScript.icon;
+        icon.sprite = softwares.icon;
         icon.enabled = true;
         removeButton.interactable = true;
     }
 
     public void ClearSlot()
     {
-        SoftwareScript = null;
+        Software = null;
         icon.sprite = null;
         icon.enabled = false;
         removeButton.interactable = false;
@@ -31,18 +34,20 @@ public class InventorySlot : MonoBehaviour
     {
         infoShowup.SetActive(true);
         infoShowup.transform.position = transform.position;
+        InfoShowup.software = software;
+
     }
 
     public void OnRemoveButton()
     {
-        Inventory.instance.RemoveItem(SoftwareScript);
+        Inventory.instance.RemoveItem(Software);
     }
 
     public void UseItem()
     {
-        if (SoftwareScript != null)
+        if (Software != null)
         {
-            SoftwareScript.Use();
+            Software.Use();
         }
     }
 

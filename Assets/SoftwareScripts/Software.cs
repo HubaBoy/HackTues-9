@@ -16,6 +16,11 @@ public class Software : SoftwareScripts
         SoftwareManager.instance.Equip(this);
         RemoveFromInventory();
     }
+
+    public void RemoveFromInventory()
+    {
+        Inventory.instance.RemoveItem(this);
+    }
 }
 
 public enum SoftwareSlot { slot1, slot2, slot3, slot4 }

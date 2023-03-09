@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ItemPickUp : Interactable
 {
-    public SoftwareScripts SoftwareScript;
+    public Software software;
 
     public override void Interact ()
     {
@@ -17,8 +17,8 @@ public class ItemPickUp : Interactable
 
     void PickUp()
     {
-        Debug.Log("Picking up " + SoftwareScript.name);
-        bool wasPickedUp = Inventory.instance.AddItem(SoftwareScript);
+        Debug.Log("Picking up " + software.name);
+        bool wasPickedUp = Inventory.instance.AddItem(software);
         if(wasPickedUp)
         {
             Destroy(gameObject);

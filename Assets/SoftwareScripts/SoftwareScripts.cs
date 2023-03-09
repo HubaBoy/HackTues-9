@@ -13,8 +13,4 @@ public class SoftwareScripts : ScriptableObject
         Debug.Log("Using Software");
     }
 
-    public void RemoveFromInventory()
-    {
-        Inventory.instance.RemoveItem(this);
-    }
 }

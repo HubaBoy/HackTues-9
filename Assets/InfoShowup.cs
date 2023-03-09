@@ -4,17 +4,16 @@ using UnityEngine;
 
 public class InfoShowup : MonoBehaviour
 {
-    public static InfoShowup instance;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Software software;
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    public void Equiping()
+    {
+        SoftwareManager.instance.Equip(software);
     }
 }

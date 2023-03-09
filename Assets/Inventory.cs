@@ -20,18 +20,18 @@ public class Inventory : MonoBehaviour
 
     public int space = 20;
 
-    public List<SoftwareScripts> items = new List<SoftwareScripts>();
+    public List<Software> items = new List<Software>();
 
-    public bool AddItem(SoftwareScripts softwareScripts)
+    public bool AddItem(Software software)
     {
-        if (!softwareScripts.isDefaultItem)
+        if (!software.isDefaultItem)
         {
             if (items.Count >= space)
             {
                 Debug.Log("Not Enough space");
                 return false;
             }
-            items.Add(softwareScripts);
+            items.Add(software);
 
             if (onItemChangedCallback != null)
             {
@@ -43,9 +43,9 @@ public class Inventory : MonoBehaviour
         return true;
     }
 
-    public void RemoveItem(SoftwareScripts softwareScripts)
+    public void RemoveItem(Software software)
     {
-        items.Remove(softwareScripts);
+        items.Remove(software);
 
         if (onItemChangedCallback != null)
         {
