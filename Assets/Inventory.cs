@@ -24,20 +24,31 @@ public class Inventory : MonoBehaviour
 
     public bool AddItem(Software software)
     {
+        Debug.Log("Entering AddItem function");
         if (!software.isDefaultItem)
         {
+            Debug.Log("In the if");
+
             if (items.Count >= space)
             {
+                Debug.Log("In the if2");
+
                 Debug.Log("Not Enough space");
                 return false;
             }
+            Debug.Log("Before Add ");
+
             items.Add(software);
+
+            Debug.Log("After Add ");
 
             if (onItemChangedCallback != null)
             {
+                Debug.Log("In if ");
+
                 onItemChangedCallback.Invoke();
             }
-
+            Debug.Log("Item Added ");
         }
 
         return true;
@@ -52,5 +63,4 @@ public class Inventory : MonoBehaviour
             onItemChangedCallback.Invoke();
         }
     }
-
 }
