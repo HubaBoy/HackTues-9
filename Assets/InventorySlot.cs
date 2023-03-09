@@ -6,6 +6,8 @@ public class InventorySlot : MonoBehaviour
     public Image icon;
     public Button removeButton;
 
+    public GameObject infoShowup;
+
     SoftwareScripts SoftwareScript;
 
     public void AddItem(SoftwareScripts newSoftwareScripts)
@@ -25,6 +27,12 @@ public class InventorySlot : MonoBehaviour
         removeButton.interactable = false;
     }
 
+    public void OnButtonPress()
+    {
+        infoShowup.SetActive(true);
+        infoShowup.transform.position = transform.position;
+    }
+
     public void OnRemoveButton()
     {
         Inventory.instance.RemoveItem(SoftwareScript);
@@ -37,4 +45,5 @@ public class InventorySlot : MonoBehaviour
             SoftwareScript.Use();
         }
     }
+
 }

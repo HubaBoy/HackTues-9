@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8ec5ba0686ef34345b5418829de76dd1, type: 3}
-  m_Name: Test Items
+  m_Name: TestScript
   m_EditorClassIdentifier: 
-  name: Test item
-  icon: {fileID: 0}
+  name: TestScript
+  description: Piece of software
+  icon: {fileID: 21300000, guid: deadbc5e1b4cea541af00d64ee8efbd2, type: 3}
   isDefaultItem: 0
   equipSlot: 0
   modifier1: 0

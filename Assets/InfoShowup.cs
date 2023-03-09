@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GetItems : MonoBehaviour
+public class InfoShowup : MonoBehaviour
 {
-    public float aa;
+    public static InfoShowup instance;
 
     // Start is called before the first frame update
     void Start()
