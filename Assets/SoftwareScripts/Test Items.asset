@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ec5ba0686ef34345b5418829de76dd1, type: 3}
   m_Name: Test Items
   m_EditorClassIdentifier: 
-  name: New SoftwarePart
+  name: Test item
   icon: {fileID: 0}
   isDefaultItem: 0
   equipSlot: 0
