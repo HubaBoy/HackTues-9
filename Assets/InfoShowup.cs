@@ -32,4 +32,9 @@ public class InfoShowup : MonoBehaviour
     {
         transform.gameObject.SetActive(false);
     }
+
+    public void Buy()
+    {
+        Inventory.instance.AddItem(software);
+    }
 }
