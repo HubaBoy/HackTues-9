@@ -4,20 +4,17 @@ using UnityEngine;
 
 public class Currency : MonoBehaviour
 {
-    public float money = 0;
+    public static Currency instance;
 
-    void Start()
-    {
-        
-    }
-
-    void Update()
-    {
-        
-    }
+    private float money = 0;
 
     public void AddMoney(float amount)
     {
         money += amount;
+    }
+
+    public void WithDraw(float amount)
+    {
+        money -= amount;
     }
 }
