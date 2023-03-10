@@ -6,9 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class MoneyManager : MonoBehaviour
 {
+    public static MoneyManager instance;
     public Text moneyText;
     public float moneyAmount;
-
+    
     public GameObject AmountOfMoney;
     
     void Start()

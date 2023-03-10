@@ -17,6 +17,8 @@ public class Currency : MonoBehaviour
 
     public void WithDraw(float amount)
     {
-        money -= amount;
+      //  if(money>amount){
+        //money -= amount;
+       // }
     }
 }

@@ -35,6 +35,8 @@ public class InfoShowup : MonoBehaviour
 
     public void Buy()
     {
+      //  if(MoneyMananger.instance.moneyAmount>software.Price){
         Inventory.instance.AddItem(software);
+        //}
     }
 }
