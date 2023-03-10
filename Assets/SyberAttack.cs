@@ -73,11 +73,13 @@ public class SyberAttack : MonoBehaviour
     public void MalwareAttack()
     {
         gameObjToHack = GameObject.Find("Canvas/FileExplorer/FileParent").transform;
+        gameObjToHack.GetComponent<FileParrent>().isBeingHacked = true;
         foreach(Transform children in gameObjToHack)
         {
             if(Random.Range(1,3) % 2 == 0)
             {
                 children.GetComponent<FileFunctions>().isSus = true;
+                gameObjToHack.GetComponent<FileParrent>().numberOfCoruptedFiles += 1;
             }
         }
     }

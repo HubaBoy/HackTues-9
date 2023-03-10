@@ -3043,6 +3043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2001331656}
   - component: {fileID: 2001331657}
+  - component: {fileID: 2001331658}
   m_Layer: 5
   m_Name: FileParent
   m_TagString: Untagged
@@ -3102,6 +3103,21 @@ MonoBehaviour:
   m_Spacing: {x: 11, y: 0}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &2001331658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2001331655}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2e040f24103dd94382295f5758e9b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isBeingHacked: 0
+  numberOfCoruptedFiles: 0
+  numberOfFoundFiles: 0
 --- !u!114 &2014467376 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4074170097717544778, guid: 0f12f04195fc50549b4fb388c0685e8d, type: 3}

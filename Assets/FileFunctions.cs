@@ -13,6 +13,8 @@ public class FileFunctions : MonoBehaviour
     public GameObject isSusImageRed;
     public bool isSus = false;
 
+    public GameObject fileParent;
+
     public File file;
 
     void Update()
@@ -41,6 +43,7 @@ public class FileFunctions : MonoBehaviour
     {
         if (isSus)
         {
+            fileParent.GetComponent<FileParrent>().numberOfFoundFiles += 1;
             isSus = false;
         }
     }

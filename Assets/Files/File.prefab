@@ -569,7 +569,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3987081198256898030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4074170097717544778}
+        m_TargetAssemblyTypeName: FileFunctions, Assembly-CSharp
+        m_MethodName: ChekIfItIsSus
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7044052700635770605
 GameObject:
   m_ObjectHideFlags: 0
@@ -639,6 +651,7 @@ MonoBehaviour:
   isSusImageYellow: {fileID: 2110389977737701569}
   isSusImageRed: {fileID: 7138561623091408946}
   isSus: 0
+  fileParent: {fileID: 0}
   file: {fileID: 11400000, guid: c7da3cd1d71f306438f28fcab2d2c91a, type: 2}
 --- !u!1 &7072634956317870542
 GameObject:
