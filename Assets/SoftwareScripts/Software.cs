@@ -23,4 +23,4 @@ public class Software : SoftwareScripts
     }
 }
 
-public enum SoftwareSlot { slot1, slot2, slot3, slot4 }
+public enum SoftwareSlot { slot1, slot2, slot3, slot4, slot5 }
