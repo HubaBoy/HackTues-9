@@ -171,7 +171,7 @@ GameObject:
   - component: {fileID: 6411002250421306347}
   - component: {fileID: 4852315819925643857}
   m_Layer: 5
-  m_Name: Fix
+  m_Name: Scan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -238,7 +238,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fix
+  m_Text: 'Scan
+
+'
 --- !u!1 &2110389977737701569
 GameObject:
   m_ObjectHideFlags: 0
@@ -256,7 +258,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &727714500019402696
 RectTransform:
   m_ObjectHideFlags: 0
@@ -461,7 +463,7 @@ GameObject:
   - component: {fileID: 3987081198256898030}
   - component: {fileID: 571195064218564661}
   m_Layer: 5
-  m_Name: Chek&Fix
+  m_Name: Scan
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -485,8 +487,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 376.05243, y: 0}
-  m_SizeDelta: {x: 29.895, y: 30}
+  m_AnchoredPosition: {x: 371.68127, y: 0}
+  m_SizeDelta: {x: 38.6373, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3207544385078646882
 CanvasRenderer:
@@ -670,7 +672,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7600031567386487320
 RectTransform:
   m_ObjectHideFlags: 0

@@ -23,6 +23,8 @@ public class SyberAttack : MonoBehaviour
     public bool canBeHackedOnThatPC;
     public bool isHacked = false;
 
+    private bool alreadyShowedSign = false;
+
     public Transform gameObjToHack;
 
 
@@ -64,13 +66,10 @@ public class SyberAttack : MonoBehaviour
             canBeHackedOnThatPC = false;
         }
 
-        if (isUnderCyberAttack)
+        if (isUnderCyberAttack && !alreadyShowedSign)
         {
             Warning.SetActive(true);
-        }
-        else
-        {
-            Warning.SetActive(false);
+            alreadyShowedSign = true;
         }
     }
 

@@ -19,32 +19,30 @@ public class FileFunctions : MonoBehaviour
 
     void Update()
     {
-        if(isSus == false)
-        {
-            isSusImageGreen.SetActive(true);
-            isSusImageYellow.SetActive(false);
-            isSusImageRed.SetActive(false);
-        }else if(isSus == true)
-        {
-            isSusImageGreen.SetActive(false);
-            isSusImageYellow.SetActive(true);
-            isSusImageRed.SetActive(false);
-        }
+
     }
 
     public void OnFileOpen()
     {
         FileInfo.SetActive(true);
+        FileInfo.GetComponent<FileDisplayer>().fileOpened = transform;
         Title.text = file.name;
         Content.text = file.content;
     }
 
     public void ChekIfItIsSus()
     {
-        if (isSus)
+        if (isSus == false)
         {
-            fileParent.GetComponent<FileParrent>().numberOfFoundFiles += 1;
-            isSus = false;
+            isSusImageGreen.SetActive(true);
+            isSusImageYellow.SetActive(false);
+            isSusImageRed.SetActive(false);
+        }
+        else if (isSus == true)
+        {
+            isSusImageGreen.SetActive(false);
+            isSusImageYellow.SetActive(false);
+            isSusImageRed.SetActive(true);
         }
     }
 }
