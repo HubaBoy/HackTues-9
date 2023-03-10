@@ -25,6 +25,7 @@ public class InfoShowup : MonoBehaviour
     {
         SoftwareManager.instance.Equip(software);
         transform.gameObject.SetActive(false);
+        PlayerStats.instance.EquipAndModifyStats(software);
         Inventory.instance.RemoveItem(software);
     }
 

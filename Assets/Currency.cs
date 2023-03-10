@@ -6,7 +6,19 @@ using UnityEngine.SceneManagement;
 
 public class Currency : MonoBehaviour
 {
-    public static Currency instance;
+    static Currency instance;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this; // In first scene, make us the singleton.
+            DontDestroyOnLoad(gameObject);
+        }
+        else if (instance != this)
+            Destroy(gameObject); // On reload, singleton already set, so destroy duplicate.
+    }
+
 
     public static float money = 0;
 

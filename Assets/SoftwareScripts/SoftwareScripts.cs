@@ -7,7 +7,6 @@ public class SoftwareScripts : ScriptableObject
     public string description = "Piece of software";
     public Sprite icon = null;
     public bool isDefaultItem = false;
-    public float Price;
 
     public virtual void Use()
     {

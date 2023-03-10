@@ -5,6 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class InventoryShowup : MonoBehaviour
 {
+    static InventoryShowup instance;
+
+    void Awake()
+    {
+        Canvas[] canvasObject = FindObjectsOfType<Canvas>();
+        if(canvasObject.Length > 1)
+        {
+            Destroy(gameObject);
+        }
+    }
+
 
     public static bool InventoryIsShowed = false;
 

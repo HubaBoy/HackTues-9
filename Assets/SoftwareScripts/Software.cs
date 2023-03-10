@@ -7,8 +7,11 @@ public class Software : SoftwareScripts
 {
     public SoftwareSlot equipSlot;
 
-    public int modifier1;
-    public int modifier2;
+    public float DetectionSoftwarePower;
+    public float AntiMalwareSoftwarePower;
+    public float AntiSQLSoftwarePower;
+    public float BandwithPower;
+    public float FireWallPower;
 
     public override void Use()
     {
