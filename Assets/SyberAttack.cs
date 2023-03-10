@@ -18,7 +18,7 @@ public class SyberAttack : MonoBehaviour
 
     public GameObject Warning;
     static SyberAttack instance;
-    public bool isUnderSyberAttack = false;
+    public bool isUnderCyberAttack = false;
     public float chanceToBeOnThatPC = 1;
     public bool canBeHackedOnThatPC;
     public bool isHacked = false;
@@ -42,7 +42,7 @@ public class SyberAttack : MonoBehaviour
         }
         else
         {
-            isUnderSyberAttack = true;
+            isUnderCyberAttack = true;
         }
 
         if(SceneManager.GetActiveScene().name == "SampleScene")
@@ -50,7 +50,7 @@ public class SyberAttack : MonoBehaviour
             canBeHackedOnThatPC = true;
         }
 
-        if(isUnderSyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC && !isHacked)
+        if(isUnderCyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC && !isHacked)
         {
             if(chanceToBeOnThatPC == 0)
             {
@@ -64,9 +64,13 @@ public class SyberAttack : MonoBehaviour
             canBeHackedOnThatPC = false;
         }
 
-        if (isUnderSyberAttack)
+        if (isUnderCyberAttack)
         {
             Warning.SetActive(true);
+        }
+        else
+        {
+            Warning.SetActive(false);
         }
     }
 
