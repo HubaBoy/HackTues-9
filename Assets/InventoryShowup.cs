@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class InventoryShowup : MonoBehaviour
 {
+
     public static bool InventoryIsShowed = false;
 
     public GameObject InventoryUI;
