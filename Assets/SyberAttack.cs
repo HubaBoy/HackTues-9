@@ -16,6 +16,7 @@ public class SyberAttack : MonoBehaviour
              Destroy(gameObject); // On reload, singleton already set, so destroy duplicate.
     }
 
+    public GameObject Warning;
     static SyberAttack instance;
     public bool isUnderSyberAttack = false;
     public float chanceToBeOnThatPC = 1;
@@ -29,7 +30,7 @@ public class SyberAttack : MonoBehaviour
 
     void Start()
     {
-        timeUntillNextAttack = Random.Range(100, 300);
+        timeUntillNextAttack = Random.Range(10, 30);
     }
 
     void Update()
@@ -58,8 +59,11 @@ public class SyberAttack : MonoBehaviour
             {
                 chanceToBeOnThatPC -= 1;
             }
+            Warning.SetActive(true);
             canBeHackedOnThatPC = false;
         }
+
+        
     }
 
     public void MalwareAttack()
