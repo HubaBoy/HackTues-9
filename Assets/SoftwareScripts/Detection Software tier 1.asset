@@ -16,7 +16,9 @@ MonoBehaviour:
   description: Piece of software
   icon: {fileID: 21300000, guid: 72667560a62fa77498a772a5032a2a69, type: 3}
   isDefaultItem: 0
-  Price: 100
-  equipSlot: 0
-  modifier1: 0
-  modifier2: 0
+  equipSlot: 1
+  DetectionSoftwarePower: 0
+  AntiMalwareSoftwarePower: 0
+  AntiSQLSoftwarePower: 0
+  BandwithPower: 0
+  FireWallPower: 0

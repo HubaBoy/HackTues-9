@@ -59,11 +59,13 @@ public class SyberAttack : MonoBehaviour
             {
                 chanceToBeOnThatPC -= 1;
             }
-            Warning.SetActive(true);
             canBeHackedOnThatPC = false;
         }
 
-        
+        if (isUnderSyberAttack)
+        {
+            Warning.SetActive(true);
+        }
     }
 
     public void MalwareAttack()

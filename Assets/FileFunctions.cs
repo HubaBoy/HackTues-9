@@ -36,4 +36,12 @@ public class FileFunctions : MonoBehaviour
         Title.text = file.name;
         Content.text = file.content;
     }
+
+    public void ChekIfItIsSus()
+    {
+        if (isSus)
+        {
+            isSus = false;
+        }
+    }
 }
