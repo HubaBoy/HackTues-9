@@ -23,6 +23,7 @@ public class InfoShowup : MonoBehaviour
 
     public void Equiping()
     {
+        Debug.Log("SOFTWARE TO EQUIP IS" + software);
         SoftwareManager.instance.Equip(software);
         transform.gameObject.SetActive(false);
         PlayerStats.instance.EquipAndModifyStats(software);

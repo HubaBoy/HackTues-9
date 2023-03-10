@@ -24,9 +24,7 @@ public class SoftwareManager : MonoBehaviour
 
     void Start()
     {
-        inventory = Inventory.instance;
-        int numSlots = System.Enum.GetNames(typeof(SoftwareSlot)).Length;
-        currentSoftware = new Software[numSlots];
+        Init();
     }
 
     public void Equip(Software newSoftware)
@@ -36,8 +34,9 @@ public class SoftwareManager : MonoBehaviour
         Debug.Log("2");
         Software oldSoftware = null;
         Debug.Log("3");
-
-        Debug.Log("current software" + currentSoftware[slotIndex]);
+        Debug.Log(newSoftware);
+        Debug.Log(slotIndex);
+        Debug.Log(currentSoftware);
 
         if (currentSoftware[slotIndex] != null)
         {
@@ -60,4 +59,15 @@ public class SoftwareManager : MonoBehaviour
         Debug.Log("10");
     }
 
+    public void Init()
+    {
+        inventory = Inventory.instance;
+        int numSlots = System.Enum.GetNames(typeof(SoftwareSlot)).Length;
+        currentSoftware = new Software[numSlots];
+    }
+
+    void OnLevelWasLoaded()
+    {
+        Init();
+    }
 }

@@ -8,8 +8,27 @@ public class FileFunctions : MonoBehaviour
     public Text Title;
     public Text Content;
     public GameObject FileInfo;
+    public GameObject isSusImageGreen;
+    public GameObject isSusImageYellow;
+    public GameObject isSusImageRed;
+    public bool isSus = false;
 
     public File file;
+
+    void Update()
+    {
+        if(isSus == false)
+        {
+            isSusImageGreen.SetActive(true);
+            isSusImageYellow.SetActive(false);
+            isSusImageRed.SetActive(false);
+        }else if(isSus == true)
+        {
+            isSusImageGreen.SetActive(false);
+            isSusImageYellow.SetActive(true);
+            isSusImageRed.SetActive(false);
+        }
+    }
 
     public void OnFileOpen()
     {

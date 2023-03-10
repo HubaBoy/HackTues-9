@@ -10,14 +10,13 @@ public class Currency : MonoBehaviour
 
     void Awake()
     {
-        if (instance == null)
+        GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("GameManager");
+        if (gameObjects.Length > 1)
         {
-            instance = this; // In first scene, make us the singleton.
-            DontDestroyOnLoad(gameObject);
+            Destroy(gameObject);
         }
-        else if (instance != this)
-            Destroy(gameObject); // On reload, singleton already set, so destroy duplicate.
     }
+
 
 
     public static float money = 0;
