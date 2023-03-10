@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UsingPC.unity
     guid: 73a38070a6588c94bb872e3e63e89dee
+  - enabled: 1
+    path: Assets/Scenes/OfficePc1.unity
+    guid: a29a134b899e1e746b941ecd6f601c9a
+  - enabled: 1
+    path: Assets/Scenes/OfficePc2.unity
+    guid: de417de159dccfd47aaf695cf66723f8
+  - enabled: 1
+    path: Assets/Scenes/OfficePc3.unity
+    guid: 6288effbe1ba5c244a79a80f566b10dd
   m_configObjects: {}

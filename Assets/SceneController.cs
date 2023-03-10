@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SceneController : MonoBehaviour
 {
-    public void LoadScene(string input)
+    public void LoadScene(string sceneToLoad)
     {
-        SceneManager.LoadScene("UsingPC");
+        SceneManager.LoadScene(sceneToLoad);
     }
 }

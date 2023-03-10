@@ -788,6 +788,40 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3520071472854375202, guid: 118ae5cd4edea674396490d5e57b0fb9, type: 3}
   m_PrefabInstance: {fileID: 424997202}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &438274072
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 438274073}
+  m_Layer: 0
+  m_Name: Office
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &438274073
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438274072}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -9.696863, y: 3.7205784, z: -4.628852}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1894251449}
+  - {fileID: 1005996214}
+  - {fileID: 1765911045}
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &461933166
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -939,7 +973,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &492712469
 PrefabInstance:
@@ -1280,7 +1314,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &631185778
 GameObject:
@@ -1783,7 +1817,7 @@ GameObject:
   - component: {fileID: 1005996212}
   - component: {fileID: 1005996211}
   m_Layer: 0
-  m_Name: monitor_state1 (2)
+  m_Name: OfficeMonitor2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1805,6 +1839,7 @@ MonoBehaviour:
   interactionTransform: {fileID: 1005996214}
   player: {fileID: 1310809951}
   sceneController: {fileID: 2110913639}
+  scieneToLoad: OfficePC2
 --- !u!61 &1005996212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1871,7 +1906,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: af2b2638c47d2d14a892b6945ed50457, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1890,13 +1925,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1005996210}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.07, y: 3.0181317, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.21, y: 6.07, z: 4.628852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 438274073}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1009995823
 PrefabInstance:
@@ -2997,6 +3032,7 @@ MonoBehaviour:
   interactionTransform: {fileID: 1366127048}
   player: {fileID: 1310809951}
   sceneController: {fileID: 2110913639}
+  scieneToLoad: UsingPC
 --- !u!61 &1366127046
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3088,7 +3124,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1457692608
 GameObject:
@@ -4452,7 +4488,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1765911041
 GameObject:
@@ -4467,7 +4503,7 @@ GameObject:
   - component: {fileID: 1765911043}
   - component: {fileID: 1765911042}
   m_Layer: 0
-  m_Name: monitor_state1 (3)
+  m_Name: OfficeMonitor3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4489,6 +4525,7 @@ MonoBehaviour:
   interactionTransform: {fileID: 1765911045}
   player: {fileID: 1310809951}
   sceneController: {fileID: 2110913639}
+  scieneToLoad: OfficePC3
 --- !u!61 &1765911043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4555,7 +4592,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: af2b2638c47d2d14a892b6945ed50457, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4574,13 +4611,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1765911041}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.07, y: 3.0181317, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.21, y: -0.08, z: 4.628852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 438274073}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1894251445
 GameObject:
@@ -4595,7 +4632,7 @@ GameObject:
   - component: {fileID: 1894251447}
   - component: {fileID: 1894251446}
   m_Layer: 0
-  m_Name: monitor_state1
+  m_Name: OfficeMonitor1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4617,6 +4654,7 @@ MonoBehaviour:
   interactionTransform: {fileID: 1894251449}
   player: {fileID: 1310809951}
   sceneController: {fileID: 2110913639}
+  scieneToLoad: OfficePC1
 --- !u!61 &1894251447
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4683,7 +4721,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: af2b2638c47d2d14a892b6945ed50457, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4702,13 +4740,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1894251445}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.22, y: 3.0181317, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.04, y: 12.44, z: 4.628852}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 438274073}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1966064233 stripped
 GameObject:
