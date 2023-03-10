@@ -21,6 +21,7 @@ public class SyberAttack : MonoBehaviour
     public bool isUnderSyberAttack = false;
     public float chanceToBeOnThatPC = 1;
     public bool canBeHackedOnThatPC;
+    public bool isHacked = false;
 
     public Transform gameObjToHack;
 
@@ -49,11 +50,12 @@ public class SyberAttack : MonoBehaviour
             canBeHackedOnThatPC = true;
         }
 
-        if(isUnderSyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC)
+        if(isUnderSyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC && !isHacked)
         {
             if(chanceToBeOnThatPC == 0)
             {
                 MalwareAttack();
+                isHacked = true;
             }
             else
             {
