@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class FileFunctions : MonoBehaviour
 {
@@ -44,5 +45,10 @@ public class FileFunctions : MonoBehaviour
             isSusImageYellow.SetActive(false);
             isSusImageRed.SetActive(true);
         }
+    }
+
+    public void LoadPresentation()
+    {
+        SceneManager.LoadScene("Presentation");
     }
 }

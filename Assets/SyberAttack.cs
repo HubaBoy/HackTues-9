@@ -38,38 +38,42 @@ public class SyberAttack : MonoBehaviour
 
     void Update()
     {
-        if(timeUntillNextAttack > 0)
+        if (SceneManager.GetActiveScene().name != "Presentation")
         {
-            timeUntillNextAttack -= Time.deltaTime;
-        }
-        else
-        {
-            isUnderCyberAttack = true;
-        }
 
-        if(SceneManager.GetActiveScene().name == "SampleScene")
-        {
-            canBeHackedOnThatPC = true;
-        }
-
-        if(isUnderCyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC && !isHacked)
-        {
-            if(chanceToBeOnThatPC == 0)
+            if (timeUntillNextAttack > 0)
             {
-                MalwareAttack();
-                isHacked = true;
+                timeUntillNextAttack -= Time.deltaTime;
             }
             else
             {
-                chanceToBeOnThatPC -= 1;
+                isUnderCyberAttack = true;
             }
-            canBeHackedOnThatPC = false;
-        }
 
-        if (isUnderCyberAttack && !alreadyShowedSign)
-        {
-            Warning.SetActive(true);
-            alreadyShowedSign = true;
+            if (SceneManager.GetActiveScene().name == "SampleScene")
+            {
+                canBeHackedOnThatPC = true;
+            }
+
+            if (isUnderCyberAttack && SceneManager.GetActiveScene().name != "SampleScene" && canBeHackedOnThatPC && !isHacked)
+            {
+                if (chanceToBeOnThatPC == 0)
+                {
+                    MalwareAttack();
+                    isHacked = true;
+                }
+                else
+                {
+                    chanceToBeOnThatPC -= 1;
+                }
+                canBeHackedOnThatPC = false;
+            }
+
+            if (isUnderCyberAttack && !alreadyShowedSign)
+            {
+                Warning.SetActive(true);
+                alreadyShowedSign = true;
+            }
         }
     }
 

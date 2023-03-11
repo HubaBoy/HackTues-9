@@ -261,6 +261,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0daf91d94c807544e93ba777bb0c5928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileOpened: {fileID: 0}
 --- !u!1 &143431308
 GameObject:
   m_ObjectHideFlags: 0
@@ -7603,6 +7604,10 @@ PrefabInstance:
       propertyPath: FileInfo
       value: 
       objectReference: {fileID: 98773632}
+    - target: {fileID: 5419183886247458578, guid: 0f12f04195fc50549b4fb388c0685e8d, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadPresentation
+      objectReference: {fileID: 0}
     - target: {fileID: 7044052700635770605, guid: 0f12f04195fc50549b4fb388c0685e8d, type: 3}
       propertyPath: m_Name
       value: File
